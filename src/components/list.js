@@ -1,15 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {List, ListItem} from 'material-ui/List';
+import { List, ListItem } from 'material-ui/List';
 import Avatar from 'material-ui/Avatar';
-import {pinkA200, transparent} from 'material-ui/styles/colors';
+import { transparent, pink200, white } from 'material-ui/styles/colors';
 
 class ListConvertedUnits extends React.Component {
     render() {
         return (
-            <div>
-                {this.props.units.map((unit) => <div key={unit.code}>{unit.label}: {unit.value}</div>)}
-            </div>
+            <List>
+                {this.props.units.map((unit) =>
+                    <ListItem primaryText={unit.label + ": " + unit.value}
+                        key={unit.code}
+                        leftAvatar={
+                            <Avatar color={white} backgroundColor={pink200}>{unit.code}</Avatar>
+                        }></ListItem>)}
+            </List>
         )
     }
 }
