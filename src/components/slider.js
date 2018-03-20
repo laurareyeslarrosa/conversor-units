@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Slider from 'material-ui/Slider';
 
 class NumberSelector extends React.Component {

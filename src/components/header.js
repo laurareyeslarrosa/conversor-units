@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import AppBar from 'material-ui/AppBar';
 
 class Header extends React.Component {

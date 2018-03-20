@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import AutoComplete from 'material-ui/AutoComplete';
 import { units, unitsDSConfig } from '../helpers/const/constUnits'
 
