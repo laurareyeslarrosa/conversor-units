@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import AutoComplete from 'material-ui/AutoComplete';
-import { medidas, medidasDSConfig } from '../helpers/const/constMedidas'
+import { units, unitsDSConfig } from '../helpers/const/constUnits'
 
 class UnitSelector extends React.Component {
     render() {
         return (
             <AutoComplete
                 floatingLabelText="Seleccionar unidad"
-                dataSource={medidas}
-                dataSourceConfig={medidasDSConfig}
+                fullWidth={true}
+                dataSource={units}
+                dataSourceConfig={unitsDSConfig}
                 filter={AutoComplete.caseInsensitiveFilter}
                 onUpdateInput={this.props.handleFunction}
                 openOnFocus={true}
